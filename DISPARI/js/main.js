@@ -18,7 +18,7 @@ console.log(computerNumber);
 // sommiamo i due numeri 
 function sommaNumeri (num1 , num2){
 
-    const risultato = num1 + num2;
+    var risultato = num1 + num2;
 
     // attraverso una condizione verifico se il risultato è pari o dispari
     var pari = "pari";
@@ -36,13 +36,17 @@ function sommaNumeri (num1 , num2){
         console.log(risultato);
     }
 
-    // if (pariDispari == risultato) {
-    //     alert("Hai perso!");
-    // }else if (pariDispari != risultato) {
-    //     alert("Hai perso!")
-    // }
+    return risultato;
+
 }
 
 // creo una nuova costante per ottenere il risultato della somma dei due numeri
 const somma = sommaNumeri(userNumber , computerNumber);
 console.log(somma);
+
+// creo la condizione per verificare se la scelta iniziale dell'utente corrisponde col risuòltato della funzione 
+if (pariDispari == somma) {
+        alert("Hai perso!");
+    }else if (pariDispari != somma) {
+        alert("Hai perso!")
+    }
