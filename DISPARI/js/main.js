@@ -19,6 +19,7 @@ console.log(computerNumber);
 function sommaNumeri (num1 , num2){
 
     var risultato = num1 + num2;
+    console.log(risultato);
 
     // attraverso una condizione verifico se il risultato è pari o dispari
 
